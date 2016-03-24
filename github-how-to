@@ -18,3 +18,15 @@
     git push -u origin master
 
 
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+// CLI username and password caching   
+//-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+# Cache only 
+git config --global credential.helper cache 
+
+# Cache for 5 minute only 
+git config --global credential.helper "cache --timeout=300"
+
+# Want more check  http://stackoverflow.com/questions/5343068/is-there-a-way-to-skip-password-typing-when-using-https-github
+
+
